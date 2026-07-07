@@ -25,9 +25,9 @@ def define_ms(app, host):
         authority=app.config["AUTHORITY"],
         client_id=app.config["CLIENT_ID"],
         client_credential=app.config["CLIENT_SECRET"],
-        redirect_uri="https://" + host + ":8000/auth/login"
+        redirect_uri="https://" + host + ":5000/auth/login"
     )
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
